@@ -93,7 +93,11 @@ int main(int argc, char *argv[])
         {
             if (kv.second == max) 
             {
-                cout << kv.first << "  -  " << kv.second << endl;
+                if (i == N - 1) {
+                    cout << kv.first << "  -  " << kv.second;
+                } else {
+                    cout << kv.first << "  -  " << kv.second << endl;
+                }
                 freq.erase(kv.first);
                 break;
             }
