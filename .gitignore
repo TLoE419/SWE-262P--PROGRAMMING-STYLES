@@ -1,2 +1,19 @@
-/.DS_Store
-/.vscode
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# C++ compiled files
+*.o
+*.exe
+*.out
+*.app
+Main
