@@ -1,6 +1,49 @@
 # macOS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # VS Code
 .vscode/
+*.code-workspace
+
+# C++ compiled files
+*.o
+*.exe
+*.out
+*.app
+*.dSYM/
+Main
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# IDE files
+*.sublime-project
+*.sublime-workspace
+.idea/
+*.iml
+
+# Build directories
+build/
+dist/
+bin/
+obj/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
 
