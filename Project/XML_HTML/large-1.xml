@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<company>
+  <departments>
+    <department id="d1">
+      <name>Engineering</name>
+      <manager id="m1">
+        <name>Jane Smith</name>
+        <email>jane.smith@company.com</email>
+      </manager>
+      <employees>
+        <employee id="e101">
+          <name>Alice Wang</name>
+          <role>Senior Dev</role>
+          <projects>
+            <project code="p1">Inventory Platform</project>
+            <project code="p2">Mobile App</project>
+          </projects>
+        </employee>
+        <employee id="e102">
+          <name>Bob Lee</name>
+          <role>QA</role>
+        </employee>
+        <employee id="e103">
+          <name>Chris Kim</name>
+          <role>DevOps</role>
+          <projects>
+            <project code="p3">Cloud Migration</project>
+          </projects>
+        </employee>
+      </employees>
+    </department>
+    <department id="d2">
+      <name>HR</name>
+      <manager id="m2">
+        <name>Emma Brown</name>
+        <email>emma.brown@company.com</email>
+      </manager>
+      <employees>
+        <employee id="e201">
+          <name>Sara White</name>
+          <role>Recruiter</role>
+        </employee>
+        <employee id="e202">
+          <name>Tommy Green</name>
+          <role>Onboarding</role>
+        </employee>
+      </employees>
+    </department>
+    <department id="d3">
+      <name>Sales</name>
+      <manager id="m3">
+        <name>David Black</name>
+        <email>david.black@company.com</email>
+      </manager>
+      <employees>
+        <employee id="e301">
+          <name>Olivia Blue</name>
+          <role>Sales Lead</role>
+          <clients>
+            <client id="c51"><name>Acme Corp</name></client>
+            <client id="c52"><name>Bravo Inc</name></client>
+          </clients>
+        </employee>
+        <employee id="e302">
+          <name>Mike Violet</name>
+          <role>Sales</role>
+        </employee>
+      </employees>
+    </department>
+  </departments>
+  <location>
+    <city>Taipei</city>
+    <building>Main Tower</building>
+    <address>1 Fuxing N Rd, 10F</address>
+  </location>
+</company>

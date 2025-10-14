@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<log>
+  <entry id="start">
+    <time>2025-10-10T09:32</time>
+    <event>System Start</event>
+  </entry>
+  <entry id="login">
+    <time>2025-10-10T10:11</time>
+    <event>User Login</event>
+    <user id="u011">Alex</user>
+  </entry>
+  <entry id="error">
+    <time>2025-10-10T10:43</time>
+    <event>Error</event>
+    <message>Disk Full</message>
+  </entry>
+</log>

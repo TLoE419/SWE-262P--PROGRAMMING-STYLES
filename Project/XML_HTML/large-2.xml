@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<university id="uci">
+  <name>University of California, Irvine</name>
+  <colleges>
+    <college id="eng">
+      <name>Engineering</name>
+      <departments>
+        <department id="cs">
+          <name>Computer Science</name>
+          <faculty>
+            <professor id="p01">
+              <name>Dr. Lin</name>
+              <email>lin@uci.edu</email>
+              <courses>
+                <course code="CS122A" term="Fall">
+                  <title>Intro to Databases</title>
+                  <students>
+                    <student id="s001"><name>Ellen</name></student>
+                    <student id="s002"><name>Howard</name></student>
+                  </students>
+                </course>
+                <course code="CS162" term="Spring">
+                  <title>Machine Learning</title>
+                  <students>
+                    <student id="s003"><name>Brian</name></student>
+                  </students>
+                </course>
+              </courses>
+            </professor>
+            <professor id="p02">
+              <name>Prof. Chang</name>
+              <email>chang@uci.edu</email>
+            </professor>
+          </faculty>
+        </department>
+        <department id="ee">
+          <name>Electrical Engineering</name>
+          <faculty>
+            <professor id="p03"><name>Dr. Wu</name></professor>
+          </faculty>
+        </department>
+      </departments>
+    </college>
+    <college id="bus">
+      <name>Business</name>
+      <departments>
+        <department id="mgmt">
+          <name>Management</name>
+          <faculty>
+            <professor id="p04"><name>Dr. Tan</name></professor>
+          </faculty>
+        </department>
+      </departments>
+    </college>
+  </colleges>
+  <address>
+    <street>421 Campus Drive</street>
+    <city>Irvine</city>
+    <zip>92697</zip>
+  </address>
+</university>

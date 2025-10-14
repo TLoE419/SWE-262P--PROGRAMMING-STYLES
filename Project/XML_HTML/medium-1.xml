@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<universities>
+  <university id="uci">
+    <departments>
+      <department id="cs">
+        <courses>
+          <course id="ds"><name>Data Structures</name></course>
+          <course id="algo"><name>Algorithms</name></course>
+        </courses>
+      </department>
+      <department id="math">
+        <courses>
+          <course id="calc"><name>Calculus</name></course>
+          <course id="la"><name>Linear Algebra</name></course>
+        </courses>
+      </department>
+    </departments>
+  </university>
+</universities>

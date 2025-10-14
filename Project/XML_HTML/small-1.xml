@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<schedule>
+  <event id="E1">
+    <name>Meeting</name>
+    <date>2025-10-11</date>
+    <location>Room 202</location>
+  </event>
+  <event id="E2">
+    <name>Exam</name>
+    <date>2025-11-13</date>
+    <location>Building A</location>
+  </event>
+</schedule>
