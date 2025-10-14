@@ -12,9 +12,8 @@ try:
         soup = BeautifulSoup(f, 'html.parser')
 except FileNotFoundError:
     print(f"File {filename} not found.")
-    
-for tag in soup.find_all():
-    if(tag.has_attr("id")):
-        print(tag)
+    sys.exit(1)
 
-# ask output format. Is those tags inside the id tag need to display on terminal?
+# Single API call to find all tags with id attribute
+for tag in soup.find_all(id=True):
+    print(tag)
