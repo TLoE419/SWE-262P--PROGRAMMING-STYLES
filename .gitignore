@@ -47,3 +47,8 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 
+# Claude Code
+.claude/
+.claude_code/
+.claude_history
+*.claude
