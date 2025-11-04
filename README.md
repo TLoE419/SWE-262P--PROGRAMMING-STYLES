@@ -130,6 +130,35 @@ chmod +x seven.sh
 
 ---
 
+## Week 5 Exercise - Reflection and Introspection
+
+This week implements a JAR file analyzer using Java Reflection API.
+
+### Program
+
+**JarClasses.java** - Analyzes classes in a JAR file and reports method/field statistics using reflection
+
+### Features
+
+The program inspects each class in a JAR file and displays:
+- Number of public methods
+- Number of private methods
+- Number of protected methods
+- Number of static methods
+- Number of fields
+
+### Compilation and Execution
+
+```bash
+cd "Week 5 exercise"
+
+# Compile
+javac JarClasses.java
+
+# Run (using the included json-java.jar as example)
+java JarClasses json-java.jar
+```
+
 ### File Structure
 
 ```
@@ -145,9 +174,13 @@ SWE 262P- PROGRAMMING STYLES/
 │   ├── Five.cpp
 │   ├── Main.java
 │   └── executables
-└── Week 3 exercise/
-    ├── eight.cpp
-    ├── seven.sh
-    └── eight (executable)
+├── Week 3 exercise/
+│   ├── eight.cpp
+│   ├── seven.sh
+│   └── eight (executable)
+└── Week 5 exercise/
+    ├── JarClasses.java
+    ├── JarClasses.class
+    └── json-java.jar
 ```
 
