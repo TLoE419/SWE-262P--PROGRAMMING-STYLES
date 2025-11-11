@@ -159,37 +159,6 @@ javac JarClasses.java
 java JarClasses json-java.jar
 ```
 
-### File Structure
-
-```
-SWE 262P- PROGRAMMING STYLES/
-├── README.md
-├── stop_words.txt
-├── pride-and-prejudice.txt
-├── Week 1 exercise/
-│   ├── Main.cpp
-│   └── Main (executable)
-├── Week 2 exercise/
-│   ├── Four.cpp
-│   ├── Five.cpp
-│   ├── Main.java
-│   └── executables
-├── Week 3 exercise/
-│   ├── eight.cpp
-│   ├── seven.sh
-│   └── eight (executable)
-├── Week 5 exercise/
-│   ├── JarClasses.java
-│   ├── JarClasses.class
-│   └── json-java.jar
-└── Week 6 exercise/
-    ├── 29.1.cpp
-    ├── 30.1.cpp
-    └── 32.1.cpp
-```
-
----
-
 ## Week 6 Exercise - Concurrent Programming Styles
 
 This week implements the term frequency program using concurrent programming patterns with multiple threads.
@@ -246,5 +215,34 @@ g++ -std=c++11 32.1.cpp -o 32.1
 
 ```bash
 ./32.1 ../pride-and-prejudice.txt
+```
+
+### File Structure
+
+```
+SWE 262P- PROGRAMMING STYLES/
+├── README.md
+├── stop_words.txt
+├── pride-and-prejudice.txt
+├── Week 1 exercise/
+│   ├── Main.cpp
+│   └── Main (executable)
+├── Week 2 exercise/
+│   ├── Four.cpp
+│   ├── Five.cpp
+│   ├── Main.java
+│   └── executables
+├── Week 3 exercise/
+│   ├── eight.cpp
+│   ├── seven.sh
+│   └── eight (executable)
+├── Week 5 exercise/
+│   ├── JarClasses.java
+│   ├── JarClasses.class
+│   └── json-java.jar
+└── Week 6 exercise/
+    ├── 29.1.cpp
+    ├── 30.1.cpp
+    └── 32.1.cpp
 ```
 
