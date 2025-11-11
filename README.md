@@ -178,9 +178,73 @@ SWE 262P- PROGRAMMING STYLES/
 │   ├── eight.cpp
 │   ├── seven.sh
 │   └── eight (executable)
-└── Week 5 exercise/
-    ├── JarClasses.java
-    ├── JarClasses.class
-    └── json-java.jar
+├── Week 5 exercise/
+│   ├── JarClasses.java
+│   ├── JarClasses.class
+│   └── json-java.jar
+└── Week 6 exercise/
+    ├── 29.1.cpp
+    ├── 30.1.cpp
+    └── 32.1.cpp
+```
+
+---
+
+## Week 6 Exercise - Concurrent Programming Styles
+
+This week implements the term frequency program using concurrent programming patterns with multiple threads.
+
+### Programs
+
+1. **29.1.cpp** - Actor Model (Active Letterbox Style)
+2. **30.1.cpp** - Data Spaces (Shared Queue with Worker Threads)
+3. **32.1.cpp** - Map-Reduce Pattern
+
+### Style #29: Actors (29.1.cpp)
+
+**Compilation and Execution:**
+
+```bash
+cd "Week 6 exercise"
+```
+
+```bash
+g++ -std=c++11 -pthread 29.1.cpp -o 29.1
+```
+
+```bash
+./29.1 ../pride-and-prejudice.txt
+```
+
+### Style #30: Data Spaces (30.1.cpp)
+
+**Compilation and Execution:**
+
+```bash
+cd "Week 6 exercise"
+```
+
+```bash
+g++ -std=c++11 -pthread 30.1.cpp -o 30.1
+```
+
+```bash
+./30.1 ../pride-and-prejudice.txt
+```
+
+### Style #32: Map-Reduce (32.1.cpp)
+
+**Compilation and Execution:**
+
+```bash
+cd "Week 6 exercise"
+```
+
+```bash
+g++ -std=c++11 32.1.cpp -o 32.1
+```
+
+```bash
+./32.1 ../pride-and-prejudice.txt
 ```
 
