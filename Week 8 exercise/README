@@ -1,0 +1,31 @@
+Week 8 Exercise - Style #20: Plugins
+======================================
+
+Word Extractors:
+1. extractor_word_1 - Extracts all non-stop words (normal extraction)
+2. extractor_word_2 - Extracts only non-stop words containing the letter 'z'
+
+Word Counters:
+1. counter_word_1 - Counts word frequencies and returns top 25 (normal counting)
+2. counter_word_2 - Counts words by their first letter (a, b, c, etc.)
+
+From the Week8 directory, run:
+
+  javac Twenty.java
+  javac plugins/*.java
+
+  java Twenty <path_to_text_file>
+
+Example:
+  java Twenty ../pride-and-prejudice.txt
+
+Edit config.properties to select different plugin combinations:
+
+  extractor=plugins.extractor_word_1   (or plugins.extractor_word_2)
+  counter=plugins.counter_word_1       (or plugins.counter_word_2)
+
+You can test all 4 combinations:
+1. extractor_word_1 + counter_word_1 (normal extraction + word frequency)
+2. extractor_word_1 + counter_word_2 (normal extraction + first letter count)
+3. extractor_word_2 + counter_word_1 (words with z + word frequency)
+4. extractor_word_2 + counter_word_2 (words with z + first letter count)
