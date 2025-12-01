@@ -217,6 +217,57 @@ g++ -std=c++11 32.1.cpp -o 32.1
 ./32.1 ../pride-and-prejudice.txt
 ```
 
+---
+
+## Week 8 Exercise - Plugin System (Style #20)
+
+### Program
+
+**twenty.java** - Main program that loads plugins dynamically based on configuration
+
+### Plugins
+
+**Word Extractors:**
+1. `extractor_word_1` - Extracts all non-stop words (normal extraction)
+2. `extractor_word_2` - Extracts only non-stop words containing the letter 'z'
+
+**Word Counters:**
+1. `counter_word_1` - Counts word frequencies and returns top 25 (normal counting)
+2. `counter_word_2` - Counts words by their first letter (a, b, c, etc.)
+
+### Configuration
+
+The `config.properties` file controls which plugins are loaded:
+
+```properties
+extractor=plugins.extractor_word_1   # or plugins.extractor_word_2
+counter=plugins.counter_word_1       # or plugins.counter_word_2
+```
+
+### Compilation and Execution
+
+```bash
+cd "Week 8 exercise"
+
+# Compile main program
+javac twenty.java
+
+# Compile all plugins
+javac plugins/*.java
+
+# Run
+java twenty ../pride-and-prejudice.txt
+```
+
+### Plugin Combinations
+
+You can test all 4 combinations by editing `config.properties`:
+
+1. `extractor_word_1` + `counter_word_1` - Normal extraction + word frequency
+2. `extractor_word_1` + `counter_word_2` - Normal extraction + first letter count
+3. `extractor_word_2` + `counter_word_1` - Words with 'z' + word frequency
+4. `extractor_word_2` + `counter_word_2` - Words with 'z' + first letter count
+
 ### File Structure
 
 ```
@@ -240,9 +291,18 @@ SWE 262P- PROGRAMMING STYLES/
 │   ├── JarClasses.java
 │   ├── JarClasses.class
 │   └── json-java.jar
-└── Week 6 exercise/
-    ├── 29.1.cpp
-    ├── 30.1.cpp
-    └── 32.1.cpp
+├── Week 6 exercise/
+│   ├── 29.1.cpp
+│   ├── 30.1.cpp
+│   └── 32.1.cpp
+└── Week 8 exercise/
+    ├── twenty.java
+    ├── twenty.class
+    ├── config.properties
+    └── plugins/
+        ├── extractor_word_1.java
+        ├── extractor_word_2.java
+        ├── counter_word_1.java
+        └── counter_word_2.java
 ```
 
