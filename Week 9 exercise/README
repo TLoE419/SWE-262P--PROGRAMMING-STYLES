@@ -1,0 +1,36 @@
+Week 9 Exercise - Style #28: Lazy Rivers
+==========================================
+
+This week implements the term frequency program using lazy evaluation patterns.
+Two implementations are provided:
+
+1. Iterators.java - Custom Iterator classes that mimic Python generators
+2. Streams.java - Java Stream API for functional lazy evaluation
+
+APPROACH 1: Custom Iterators
+-----------------------------
+
+Compilation and Execution:
+
+  javac Iterators.java
+  java Iterators ../pride-and-prejudice.txt
+
+
+APPROACH 2: Java Stream API
+----------------------------
+
+Compilation and Execution:
+
+  javac Streams.java
+  java Streams ../pride-and-prejudice.txt
+
+TESTING
+-------
+
+You can test with different input files:
+
+  java Iterators ../pride-and-prejudice.txt
+  java Streams ../pride-and-prejudice.txt
+
+Both should produce identical results (order may vary for words with
+same frequency).

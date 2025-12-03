@@ -268,6 +268,65 @@ You can test all 4 combinations by editing `config.properties`:
 3. `extractor_word_2` + `counter_word_1` - Words with 'z' + word frequency
 4. `extractor_word_2` + `counter_word_2` - Words with 'z' + first letter count
 
+---
+
+## Week 9 Exercise - Lazy Rivers (Style #28)
+
+This week implements the term frequency program using lazy evaluation patterns that process data on-demand rather than loading everything into memory at once.
+
+### Programs
+
+1. **Iterators.java** - Java implementation with custom Iterator classes
+2. **Streams.java** - Java Stream API implementation with lazy evaluation
+
+### Java Iterators (Iterators.java)
+
+Custom Iterator classes that mimic Python generators:
+- `CharacterIterator` - Yields characters from file
+- `WordIterator` - Extracts words from character stream
+- `NonStopWordIterator` - Filters stop words
+- `CountAndSortIterator` - Counts and yields sorted results
+
+**Compilation and Execution:**
+
+```bash
+cd "Week 9 exercise"
+
+# Compile
+javac Iterators.java
+
+# Run
+java Iterators ../pride-and-prejudice.txt
+```
+
+### Java Streams (Streams.java)
+
+Uses Java 8+ Stream API for functional lazy evaluation:
+- `Files.lines()` - Creates lazy stream of lines
+- `flatMap()` - Splits lines into words lazily
+- `filter()` - Removes stop words and empty strings
+- `forEach()` - Terminal operation that triggers processing
+
+**Compilation and Execution:**
+
+```bash
+cd "Week 9 exercise"
+
+# Compile
+javac Streams.java
+
+# Run
+java Streams ../pride-and-prejudice.txt
+```
+
+### Output Format
+
+All three implementations produce identical output:
+- Prints `-----------------------------` separator
+- Shows top 25 most frequent words with counts
+- Displays intermediate results every 5000 words processed
+- Shows final results at the end
+
 ### File Structure
 
 ```
@@ -295,14 +354,20 @@ SWE 262P- PROGRAMMING STYLES/
 │   ├── 29.1.cpp
 │   ├── 30.1.cpp
 │   └── 32.1.cpp
-└── Week 8 exercise/
-    ├── twenty.java
-    ├── twenty.class
-    ├── config.properties
-    └── plugins/
-        ├── extractor_word_1.java
-        ├── extractor_word_2.java
-        ├── counter_word_1.java
-        └── counter_word_2.java
+├── Week 8 exercise/
+│   ├── twenty.java
+│   ├── twenty.class
+│   ├── config.properties
+│   └── plugins/
+│       ├── extractor_word_1.java
+│       ├── extractor_word_2.java
+│       ├── counter_word_1.java
+│       └── counter_word_2.java
+└── Week 9 exercise/
+    ├── tf-28.py
+    ├── Iterators.java
+    ├── Streams.java
+    ├── README
+    └── .class files
 ```
 
